@@ -77,7 +77,7 @@
             this.Registration_No.CustomButton.UseSelectable = true;
             this.Registration_No.CustomButton.Visible = false;
             this.Registration_No.Lines = new string[0];
-            this.Registration_No.Location = new System.Drawing.Point(188, 84);
+            this.Registration_No.Location = new System.Drawing.Point(191, 84);
             this.Registration_No.MaxLength = 32767;
             this.Registration_No.Name = "Registration_No";
             this.Registration_No.PasswordChar = '\0';
@@ -154,7 +154,7 @@
             // 
             // Diagnosis_Date
             // 
-            this.Diagnosis_Date.Location = new System.Drawing.Point(188, 134);
+            this.Diagnosis_Date.Location = new System.Drawing.Point(191, 134);
             this.Diagnosis_Date.MinimumSize = new System.Drawing.Size(0, 29);
             this.Diagnosis_Date.Name = "Diagnosis_Date";
             this.Diagnosis_Date.Size = new System.Drawing.Size(200, 29);
@@ -163,7 +163,7 @@
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(41, 84);
+            this.metroLabel1.Location = new System.Drawing.Point(44, 84);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(131, 19);
             this.metroLabel1.TabIndex = 2;
@@ -172,7 +172,7 @@
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(41, 140);
+            this.metroLabel2.Location = new System.Drawing.Point(44, 140);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(95, 19);
             this.metroLabel2.TabIndex = 2;
@@ -198,27 +198,27 @@
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(155, 387);
+            this.metroButton1.Location = new System.Drawing.Point(182, 402);
             this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(75, 23);
+            this.metroButton1.Size = new System.Drawing.Size(75, 22);
             this.metroButton1.TabIndex = 4;
             this.metroButton1.Text = "Add New";
             this.metroButton1.UseSelectable = true;
             // 
             // metroButton2
             // 
-            this.metroButton2.Location = new System.Drawing.Point(285, 387);
+            this.metroButton2.Location = new System.Drawing.Point(312, 402);
             this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(75, 23);
+            this.metroButton2.Size = new System.Drawing.Size(75, 22);
             this.metroButton2.TabIndex = 4;
             this.metroButton2.Text = "Edit";
             this.metroButton2.UseSelectable = true;
             // 
             // metroButton3
             // 
-            this.metroButton3.Location = new System.Drawing.Point(555, 387);
+            this.metroButton3.Location = new System.Drawing.Point(582, 402);
             this.metroButton3.Name = "metroButton3";
-            this.metroButton3.Size = new System.Drawing.Size(75, 23);
+            this.metroButton3.Size = new System.Drawing.Size(75, 22);
             this.metroButton3.TabIndex = 4;
             this.metroButton3.Text = "Exit";
             this.metroButton3.UseSelectable = true;
@@ -226,7 +226,7 @@
             // BioChemistry
             // 
             this.BioChemistry.AutoSize = true;
-            this.BioChemistry.Location = new System.Drawing.Point(47, 190);
+            this.BioChemistry.Location = new System.Drawing.Point(50, 191);
             this.BioChemistry.Name = "BioChemistry";
             this.BioChemistry.Size = new System.Drawing.Size(92, 15);
             this.BioChemistry.TabIndex = 2;
@@ -236,7 +236,7 @@
             // Stool
             // 
             this.Stool.AutoSize = true;
-            this.Stool.Location = new System.Drawing.Point(47, 221);
+            this.Stool.Location = new System.Drawing.Point(50, 222);
             this.Stool.Name = "Stool";
             this.Stool.Size = new System.Drawing.Size(50, 15);
             this.Stool.TabIndex = 2;
@@ -246,7 +246,7 @@
             // Blood
             // 
             this.Blood.AutoSize = true;
-            this.Blood.Location = new System.Drawing.Point(47, 251);
+            this.Blood.Location = new System.Drawing.Point(50, 252);
             this.Blood.Name = "Blood";
             this.Blood.Size = new System.Drawing.Size(54, 15);
             this.Blood.TabIndex = 2;
@@ -256,7 +256,7 @@
             // Colonoscopy
             // 
             this.Colonoscopy.AutoSize = true;
-            this.Colonoscopy.Location = new System.Drawing.Point(256, 190);
+            this.Colonoscopy.Location = new System.Drawing.Point(259, 191);
             this.Colonoscopy.Name = "Colonoscopy";
             this.Colonoscopy.Size = new System.Drawing.Size(93, 15);
             this.Colonoscopy.TabIndex = 2;
@@ -266,7 +266,7 @@
             // Gastroscopy
             // 
             this.Gastroscopy.AutoSize = true;
-            this.Gastroscopy.Location = new System.Drawing.Point(256, 221);
+            this.Gastroscopy.Location = new System.Drawing.Point(259, 222);
             this.Gastroscopy.Name = "Gastroscopy";
             this.Gastroscopy.Size = new System.Drawing.Size(88, 15);
             this.Gastroscopy.TabIndex = 2;
@@ -276,7 +276,7 @@
             // Urine
             // 
             this.Urine.AutoSize = true;
-            this.Urine.Location = new System.Drawing.Point(256, 251);
+            this.Urine.Location = new System.Drawing.Point(259, 252);
             this.Urine.Name = "Urine";
             this.Urine.Size = new System.Drawing.Size(51, 15);
             this.Urine.TabIndex = 2;
@@ -286,7 +286,7 @@
             // XRay
             // 
             this.XRay.AutoSize = true;
-            this.XRay.Location = new System.Drawing.Point(447, 190);
+            this.XRay.Location = new System.Drawing.Point(450, 191);
             this.XRay.Name = "XRay";
             this.XRay.Size = new System.Drawing.Size(54, 15);
             this.XRay.TabIndex = 2;
@@ -296,7 +296,7 @@
             // SNOGRAPHY
             // 
             this.SNOGRAPHY.AutoSize = true;
-            this.SNOGRAPHY.Location = new System.Drawing.Point(447, 221);
+            this.SNOGRAPHY.Location = new System.Drawing.Point(450, 222);
             this.SNOGRAPHY.Name = "SNOGRAPHY";
             this.SNOGRAPHY.Size = new System.Drawing.Size(87, 15);
             this.SNOGRAPHY.TabIndex = 2;
@@ -306,7 +306,7 @@
             // ECG
             // 
             this.ECG.AutoSize = true;
-            this.ECG.Location = new System.Drawing.Point(447, 251);
+            this.ECG.Location = new System.Drawing.Point(450, 252);
             this.ECG.Name = "ECG";
             this.ECG.Size = new System.Drawing.Size(45, 15);
             this.ECG.TabIndex = 2;
@@ -316,7 +316,7 @@
             // lable
             // 
             this.lable.AutoSize = true;
-            this.lable.Location = new System.Drawing.Point(538, 190);
+            this.lable.Location = new System.Drawing.Point(541, 191);
             this.lable.Name = "lable";
             this.lable.Size = new System.Drawing.Size(68, 19);
             this.lable.TabIndex = 2;
@@ -337,7 +337,7 @@
             this.Others.CustomButton.UseSelectable = true;
             this.Others.CustomButton.Visible = false;
             this.Others.Lines = new string[0];
-            this.Others.Location = new System.Drawing.Point(630, 186);
+            this.Others.Location = new System.Drawing.Point(633, 187);
             this.Others.MaxLength = 32767;
             this.Others.Name = "Others";
             this.Others.PasswordChar = '\0';
@@ -355,7 +355,7 @@
             // metroLabel6
             // 
             this.metroLabel6.AutoSize = true;
-            this.metroLabel6.Location = new System.Drawing.Point(45, 272);
+            this.metroLabel6.Location = new System.Drawing.Point(49, 282);
             this.metroLabel6.Name = "metroLabel6";
             this.metroLabel6.Size = new System.Drawing.Size(54, 19);
             this.metroLabel6.TabIndex = 2;
@@ -364,7 +364,7 @@
             // metroLabel7
             // 
             this.metroLabel7.AutoSize = true;
-            this.metroLabel7.Location = new System.Drawing.Point(45, 302);
+            this.metroLabel7.Location = new System.Drawing.Point(49, 323);
             this.metroLabel7.Name = "metroLabel7";
             this.metroLabel7.Size = new System.Drawing.Size(122, 19);
             this.metroLabel7.TabIndex = 2;
@@ -373,7 +373,7 @@
             // metroLabel8
             // 
             this.metroLabel8.AutoSize = true;
-            this.metroLabel8.Location = new System.Drawing.Point(47, 331);
+            this.metroLabel8.Location = new System.Drawing.Point(49, 363);
             this.metroLabel8.Name = "metroLabel8";
             this.metroLabel8.Size = new System.Drawing.Size(95, 19);
             this.metroLabel8.TabIndex = 2;
@@ -394,7 +394,7 @@
             this.Remark.CustomButton.UseSelectable = true;
             this.Remark.CustomButton.Visible = false;
             this.Remark.Lines = new string[0];
-            this.Remark.Location = new System.Drawing.Point(175, 272);
+            this.Remark.Location = new System.Drawing.Point(179, 282);
             this.Remark.MaxLength = 32767;
             this.Remark.Name = "Remark";
             this.Remark.PasswordChar = '\0';
@@ -424,7 +424,7 @@
             this.Rconsultation_Advice_Week.CustomButton.UseSelectable = true;
             this.Rconsultation_Advice_Week.CustomButton.Visible = false;
             this.Rconsultation_Advice_Week.Lines = new string[0];
-            this.Rconsultation_Advice_Week.Location = new System.Drawing.Point(175, 302);
+            this.Rconsultation_Advice_Week.Location = new System.Drawing.Point(179, 323);
             this.Rconsultation_Advice_Week.MaxLength = 32767;
             this.Rconsultation_Advice_Week.Name = "Rconsultation_Advice_Week";
             this.Rconsultation_Advice_Week.PasswordChar = '\0';
@@ -454,7 +454,7 @@
             this.FINAL_Diagnosis.CustomButton.UseSelectable = true;
             this.FINAL_Diagnosis.CustomButton.Visible = false;
             this.FINAL_Diagnosis.Lines = new string[0];
-            this.FINAL_Diagnosis.Location = new System.Drawing.Point(175, 331);
+            this.FINAL_Diagnosis.Location = new System.Drawing.Point(179, 363);
             this.FINAL_Diagnosis.MaxLength = 32767;
             this.FINAL_Diagnosis.Name = "FINAL_Diagnosis";
             this.FINAL_Diagnosis.PasswordChar = '\0';
@@ -472,7 +472,7 @@
             // metroLabel9
             // 
             this.metroLabel9.AutoSize = true;
-            this.metroLabel9.Location = new System.Drawing.Point(415, 302);
+            this.metroLabel9.Location = new System.Drawing.Point(419, 323);
             this.metroLabel9.Name = "metroLabel9";
             this.metroLabel9.Size = new System.Drawing.Size(117, 19);
             this.metroLabel9.TabIndex = 2;
@@ -480,16 +480,16 @@
             // 
             // Update
             // 
-            this.Update.Location = new System.Drawing.Point(426, 387);
+            this.Update.Location = new System.Drawing.Point(453, 402);
             this.Update.Name = "Update";
-            this.Update.Size = new System.Drawing.Size(75, 23);
+            this.Update.Size = new System.Drawing.Size(75, 22);
             this.Update.TabIndex = 4;
             this.Update.Text = "Update";
             this.Update.UseSelectable = true;
             // 
             // Submit
             // 
-            this.Submit.Location = new System.Drawing.Point(359, 84);
+            this.Submit.Location = new System.Drawing.Point(362, 84);
             this.Submit.Name = "Submit";
             this.Submit.Size = new System.Drawing.Size(75, 23);
             this.Submit.TabIndex = 4;
@@ -498,7 +498,7 @@
             // 
             // Rconsultation_Advice_Date
             // 
-            this.Rconsultation_Advice_Date.Location = new System.Drawing.Point(547, 302);
+            this.Rconsultation_Advice_Date.Location = new System.Drawing.Point(551, 323);
             this.Rconsultation_Advice_Date.MinimumSize = new System.Drawing.Size(0, 29);
             this.Rconsultation_Advice_Date.Name = "Rconsultation_Advice_Date";
             this.Rconsultation_Advice_Date.Size = new System.Drawing.Size(200, 29);
