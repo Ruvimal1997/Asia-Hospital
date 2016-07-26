@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Asia
 {
-    public partial class Form1 : MetroForm
+    public partial class Login : MetroForm
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
