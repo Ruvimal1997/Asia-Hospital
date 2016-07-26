@@ -22,5 +22,10 @@ namespace Asia
         {
 
         }
+
+        private void metroTextBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
