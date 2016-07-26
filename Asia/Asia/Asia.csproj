@@ -80,6 +80,12 @@
     <Compile Include="Patient Diagnosis Entry Form.Designer.cs">
       <DependentUpon>Patient Diagnosis Entry Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Patient Receipt Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Receipt Entry.Designer.cs">
+      <DependentUpon>Patient Receipt Entry.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Urine Test Form.cs">
@@ -99,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Patient Diagnosis Entry Form.resx">
       <DependentUpon>Patient Diagnosis Entry Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Receipt Entry.resx">
+      <DependentUpon>Patient Receipt Entry.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
