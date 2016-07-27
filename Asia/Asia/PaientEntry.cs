@@ -1,10 +1,14 @@
-﻿using MetroFramework.Forms;
+﻿using MetroFramework;
+using MetroFramework.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,9 +22,21 @@ namespace Asia
             InitializeComponent();
         }
 
+        int reg1;
         private void PaientEntry_Load(object sender, EventArgs e)
         {
+            string query3 = "Select * from Patient_Detail_Table ";
+            SqlDataReader myReader1 = db.showdata(query3);
 
+            while (myReader1.Read())
+            {
+                reg1 = Convert.ToInt32((myReader1["Registration_No"].ToString()));
+
+            }
+
+            reg1 = reg1 + 1;
+            metroTextBox1.Text = Convert.ToString(reg1);
+           
         }
 
         private void metroTextBox1_Click(object sender, EventArgs e)
@@ -63,7 +79,8 @@ namespace Asia
 
                 if (line == 1)
                 {
-                    string messgae = "Dear '" + pname + "', Thank you for registering with us Your Patient ID'" + reg + "'";
+                    email = metroTextBox9.Text;
+                    string messgae = "Dear Customer, Thank you for registering with us ";
                     SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
                     client.EnableSsl = true;
                     client.Timeout = 10000;
@@ -71,10 +88,10 @@ namespace Asia
                     client.UseDefaultCredentials = false;
                     client.Credentials = new NetworkCredential("asiahospital123@gmail.com", "asia12345");
                     MailMessage msg = new MailMessage();
-                    msg.To.Add("prasanga.shan92@gmail.com");
+                    msg.To.Add(email);
                     msg.From = new MailAddress("asiahospital123@gmail.com");
-                    msg.Subject = "Asia Hospital";
-                    msg.Body = "piushan loves malithi";
+                    msg.Subject = "Re:Asia Hospital";
+                    msg.Body = messgae;
                     client.Send(msg);
 
                     MetroMessageBox.Show(this, "Patient Entry added Succesfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
