@@ -528,6 +528,7 @@
             this.Exit.TabIndex = 63;
             this.Exit.Text = "Back";
             this.Exit.UseSelectable = true;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // Add
             // 

@@ -72,6 +72,14 @@ namespace Asia
         }
         int tel, age, regs, reg;
         string pname, add, mentstat, rel, fhname, city, gender, pstat, email;
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            Main_Menu mn = new Main_Menu();
+            mn.Show();
+            Close();
+        }
+
         DateTime regdate;
         int pid;
         private void Add_Click(object sender, EventArgs e)
