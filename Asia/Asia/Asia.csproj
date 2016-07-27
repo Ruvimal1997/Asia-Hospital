@@ -60,6 +60,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AsiaHospitalManagementSystemDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Colonoscopy Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Colonoscopy Test.Designer.cs">
+      <DependentUpon>Colonoscopy Test.cs</DependentUpon>
+    </Compile>
     <Compile Include="Database.cs" />
     <Compile Include="Employee Search.cs">
       <SubType>Form</SubType>
@@ -141,6 +147,9 @@
     <Compile Include="X-Ray.Designer.cs">
       <DependentUpon>X-Ray.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Colonoscopy Test.resx">
+      <DependentUpon>Colonoscopy Test.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Employee Search.resx">
       <DependentUpon>Employee Search.cs</DependentUpon>
     </EmbeddedResource>
