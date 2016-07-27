@@ -33,6 +33,7 @@
             this.metroTile3 = new MetroFramework.Controls.MetroTile();
             this.metroTile4 = new MetroFramework.Controls.MetroTile();
             this.metroTile5 = new MetroFramework.Controls.MetroTile();
+            this.metroTile6 = new MetroFramework.Controls.MetroTile();
             this.SuspendLayout();
             // 
             // metroTile1
@@ -90,11 +91,22 @@
             this.metroTile5.UseSelectable = true;
             this.metroTile5.Click += new System.EventHandler(this.metroTile5_Click);
             // 
+            // metroTile6
+            // 
+            this.metroTile6.ActiveControl = null;
+            this.metroTile6.Location = new System.Drawing.Point(895, 104);
+            this.metroTile6.Name = "metroTile6";
+            this.metroTile6.Size = new System.Drawing.Size(157, 120);
+            this.metroTile6.TabIndex = 5;
+            this.metroTile6.Text = "Search Employee";
+            this.metroTile6.UseSelectable = true;
+            // 
             // Main_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 492);
+            this.ClientSize = new System.Drawing.Size(1099, 492);
+            this.Controls.Add(this.metroTile6);
             this.Controls.Add(this.metroTile5);
             this.Controls.Add(this.metroTile4);
             this.Controls.Add(this.metroTile3);
@@ -114,5 +126,6 @@
         private MetroFramework.Controls.MetroTile metroTile3;
         private MetroFramework.Controls.MetroTile metroTile4;
         private MetroFramework.Controls.MetroTile metroTile5;
+        private MetroFramework.Controls.MetroTile metroTile6;
     }
 }
