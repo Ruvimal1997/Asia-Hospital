@@ -215,7 +215,7 @@
             this.metroTabPage2.Name = "metroTabPage2";
             this.metroTabPage2.Size = new System.Drawing.Size(400, 346);
             this.metroTabPage2.TabIndex = 0;
-            this.metroTabPage2.Text = "Search Update Delete";
+            this.metroTabPage2.Text = "Search/Update/Delete";
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.VerticalScrollbarSize = 10;
