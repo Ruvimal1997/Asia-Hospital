@@ -118,6 +118,7 @@
             // 
             // metroComboBox2
             // 
+            this.metroComboBox2.DisplayMember = "Registration_No";
             this.metroComboBox2.FormattingEnabled = true;
             this.metroComboBox2.ItemHeight = 23;
             this.metroComboBox2.Location = new System.Drawing.Point(165, 85);
@@ -155,7 +156,7 @@
             this.metroTabControl1.Name = "metroTabControl1";
             this.metroTabControl1.SelectedIndex = 0;
             this.metroTabControl1.Size = new System.Drawing.Size(671, 266);
-            this.metroTabControl1.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroTabControl1.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTabControl1.TabIndex = 46;
             this.metroTabControl1.UseSelectable = true;
             // 
@@ -182,7 +183,7 @@
             this.metroTabControl3.Name = "metroTabControl3";
             this.metroTabControl3.SelectedIndex = 0;
             this.metroTabControl3.Size = new System.Drawing.Size(239, 195);
-            this.metroTabControl3.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroTabControl3.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTabControl3.TabIndex = 23;
             this.metroTabControl3.UseSelectable = true;
             // 
@@ -330,7 +331,7 @@
             this.metroTabControl2.Name = "metroTabControl2";
             this.metroTabControl2.SelectedIndex = 0;
             this.metroTabControl2.Size = new System.Drawing.Size(239, 195);
-            this.metroTabControl2.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroTabControl2.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTabControl2.TabIndex = 2;
             this.metroTabControl2.UseSelectable = true;
             // 
@@ -533,9 +534,9 @@
             this.metroTabPage2.HorizontalScrollbarBarColor = true;
             this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.HorizontalScrollbarSize = 10;
-            this.metroTabPage2.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(663, 227);
+            this.metroTabPage2.Size = new System.Drawing.Size(663, 224);
             this.metroTabPage2.TabIndex = 1;
             this.metroTabPage2.Text = "Concentration Method and Parasites and Special Test";
             this.metroTabPage2.VerticalScrollbarBarColor = true;

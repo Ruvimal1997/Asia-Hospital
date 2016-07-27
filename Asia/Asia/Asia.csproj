@@ -91,6 +91,12 @@
     <Compile Include="PaientEntry.Designer.cs">
       <DependentUpon>PaientEntry.cs</DependentUpon>
     </Compile>
+    <Compile Include="Patient Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Search.Designer.cs">
+      <DependentUpon>Patient Search.cs</DependentUpon>
+    </Compile>
     <Compile Include="Patient_Diagnosis_Entry_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PaientEntry.resx">
       <DependentUpon>PaientEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Search.resx">
+      <DependentUpon>Patient Search.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Patient_Diagnosis_Entry_Form.resx">
       <DependentUpon>Patient_Diagnosis_Entry_Form.cs</DependentUpon>
