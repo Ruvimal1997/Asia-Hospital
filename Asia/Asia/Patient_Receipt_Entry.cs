@@ -23,6 +23,29 @@ namespace Asia
         DateTime rdate;
         double DIagnosis_Fees, Indoor_Injection_Fees, Gastroscopy_Fees, ECG_Fees, Lab_Test_Fees, X_Ray_Fees, Colonoscopy_Fees, USG_Fees, Totol_Fee;
 
+        private void metroComboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+
+                string query2 = "Select * from Patient_Detail_Table where Registration_No='" + metroComboBox3.Text + "'";
+                SqlDataReader myReader2 = db.showdata(query2);
+
+                while (myReader2.Read())
+                {
+                    metroTextBox2.Text = (myReader2["Name"].ToString());
+                    metroTextBox3.Text = (myReader2["Age"].ToString());
+                    metroTextBox1.Text = (myReader2["Gender"].ToString());
+
+                }
+            }
+            catch (Exception)
+            {
+
+                MetroMessageBox.Show(this,"error");
+            }
+        }
+
         private void metroButton3_Click(object sender, EventArgs e)
         {
             Main_Menu mn = new Main_Menu();

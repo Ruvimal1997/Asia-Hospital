@@ -278,6 +278,7 @@
             this.metroComboBox3.TabIndex = 36;
             this.metroComboBox3.UseSelectable = true;
             this.metroComboBox3.ValueMember = "Registration_No";
+            this.metroComboBox3.SelectedIndexChanged += new System.EventHandler(this.metroComboBox3_SelectedIndexChanged);
             // 
             // patientDetailTableBindingSource
             // 
@@ -400,7 +401,7 @@
             this.metroTabControl1.Name = "metroTabControl1";
             this.metroTabControl1.SelectedIndex = 0;
             this.metroTabControl1.Size = new System.Drawing.Size(618, 226);
-            this.metroTabControl1.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroTabControl1.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTabControl1.TabIndex = 31;
             this.metroTabControl1.UseSelectable = true;
             // 
