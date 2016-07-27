@@ -48,7 +48,7 @@ namespace Asia
 
             catch (Exception)
             {
-                MetroMessageBox.Show(this, "Exception");
+                MetroMessageBox.Show(this, "PLease enter the fiels properly");
             }
 
         }
@@ -102,7 +102,7 @@ namespace Asia
 
 
 
-                string query = " Update into Patient_Detail_Table  SET  Name='" + pname + "',Address='" + add + "',City='" + city + "',Telephone_No='" + tel + "',Marital_Status ='" + mentstat + "',Religion='" + rel + "',Gender='" + gender + "',Father_Husband_Name='"+fhname+"',Status='"+ pstat + "',Age='"+ age + "',Email='"+email+"' WHERE Registration_No = '" + pid + "'  ";
+                string query = " Update Patient_Detail_Table  SET  Name='" + pname + "',Address='" + add + "',City='" + city + "',Telephone_No='" + tel + "',Marital_Status ='" + mentstat + "',Religion='" + rel + "',Gender='" + gender + "',Father_Husband_Name='"+fhname+"',Status='"+ pstat + "',Age='"+ age + "',Email='"+email+"' WHERE Registration_No = '" + pid + "'  ";
                 int line = db.Save_Del_Update(query);
 
                 if (line == 1)

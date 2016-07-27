@@ -37,6 +37,9 @@
             this.metroLabel14 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel15 = new MetroFramework.Controls.MetroLabel();
             this.metroComboBox2 = new MetroFramework.Controls.MetroComboBox();
+            this.patientDetailTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet1 = new Asia.DataSet1();
             this.metroLabel17 = new MetroFramework.Controls.MetroLabel();
             this.metroTextBox15 = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel16 = new MetroFramework.Controls.MetroLabel();
@@ -68,15 +71,12 @@
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
-            this.dataSet1 = new Asia.DataSet1();
-            this.dataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.patientDetailTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.patient_Detail_TableTableAdapter = new Asia.DataSet1TableAdapters.Patient_Detail_TableTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.patientDetailTableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.patientDetailTableBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // metroButton5
@@ -157,6 +157,21 @@
             this.metroComboBox2.UseSelectable = true;
             this.metroComboBox2.ValueMember = "Registration_No";
             this.metroComboBox2.SelectedIndexChanged += new System.EventHandler(this.metroComboBox2_SelectedIndexChanged);
+            // 
+            // patientDetailTableBindingSource
+            // 
+            this.patientDetailTableBindingSource.DataMember = "Patient_Detail_Table";
+            this.patientDetailTableBindingSource.DataSource = this.dataSet1BindingSource;
+            // 
+            // dataSet1BindingSource
+            // 
+            this.dataSet1BindingSource.DataSource = this.dataSet1;
+            this.dataSet1BindingSource.Position = 0;
+            // 
+            // dataSet1
+            // 
+            this.dataSet1.DataSetName = "DataSet1";
+            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // metroLabel17
             // 
@@ -809,21 +824,6 @@
             this.metroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.metroTextBox1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // dataSet1
-            // 
-            this.dataSet1.DataSetName = "DataSet1";
-            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dataSet1BindingSource
-            // 
-            this.dataSet1BindingSource.DataSource = this.dataSet1;
-            this.dataSet1BindingSource.Position = 0;
-            // 
-            // patientDetailTableBindingSource
-            // 
-            this.patientDetailTableBindingSource.DataMember = "Patient_Detail_Table";
-            this.patientDetailTableBindingSource.DataSource = this.dataSet1BindingSource;
-            // 
             // patient_Detail_TableTableAdapter
             // 
             this.patient_Detail_TableTableAdapter.ClearBeforeFill = true;
@@ -850,12 +850,12 @@
             this.Name = "Colonoscopy_Test";
             this.Text = "Colonoscopy_Test";
             this.Load += new System.EventHandler(this.Colonoscopy_Test_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.patientDetailTableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
             this.metroTabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.patientDetailTableBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

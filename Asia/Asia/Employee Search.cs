@@ -38,34 +38,32 @@ namespace Asia
             metroTextBox2.Text = metroGrid1.CurrentRow.Cells["First_Name"].Value.ToString();
             metroTextBox3.Text = metroGrid1.CurrentRow.Cells["Last_Name"].Value.ToString();
             metroComboBox1.Text = metroGrid1.CurrentRow.Cells["Gender"].Value.ToString();
-            metroDateTime1.Text = metroGrid1.CurrentRow.Cells["Date_of_Birth"].Value.ToString();
             metroTextBox4.Text = metroGrid1.CurrentRow.Cells["Address"].Value.ToString();
             metroTextBox7.Text = metroGrid1.CurrentRow.Cells["Email"].Value.ToString();
             metroTextBox5.Text = metroGrid1.CurrentRow.Cells["Telephone"].Value.ToString();
            
         }
+        int empid, tel;
+        string fname, email, lname, gender, address;
 
         private void metroButton1_Click(object sender, EventArgs e)
         {
             
-            try
-            {
-                int empid, tel;
-                string fname, email, lname, gender, address, emptype, username, password;
-                DateTime dob;
+            //try
+            //{
+               
 
                 empid = Convert.ToInt32(metroTextBox1.Text);
                 fname = metroTextBox2.Text;
                 lname = metroTextBox3.Text;
                 gender = metroComboBox1.Text;
-                dob = metroDateTime1.Value;
                 address = metroTextBox4.Text;
                 email = metroTextBox7.Text;
                 tel = Convert.ToInt32(metroTextBox5.Text);
 
          
 
-                string query = " Update into Employee  SET  First_Name='" + fname + "',Last_Name='" + lname + "',Gender='" + gender + "',Date_of_Birth='" + dob + "',Address ='" + address + "',Email='" + email + "',Telephone='" + tel + "' WHERE Emp_ID = '" + empid + "'  ";     
+                string query = " Update Employee  SET  First_Name='" + fname + "',Last_Name='" + lname + "',Gender='" + gender + "',Address ='" + address + "',Email='" + email + "',Telephone='" + tel + "' WHERE Emp_ID = '" + empid + "'  ";     
                 int line = db.Save_Del_Update(query);
 
                 if (line == 1)
@@ -78,11 +76,11 @@ namespace Asia
                     MetroMessageBox.Show(this, "Employee not updated", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 
-            }
-            catch (Exception)
-            {
-                MetroMessageBox.Show(this, "Exception");
-            }
+            //}
+            //catch (Exception)
+            //{
+            //    MetroMessageBox.Show(this, "Exception");
+            //}
         }
 
         private void metroButton2_Click(object sender, EventArgs e)

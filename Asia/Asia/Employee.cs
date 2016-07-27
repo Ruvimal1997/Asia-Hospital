@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Net;
@@ -21,10 +22,20 @@ namespace Asia
         {
             InitializeComponent();
         }
-
+        int emp;
         private void Employee_Load(object sender, EventArgs e)
         {
+            string query3 = "Select * from Employee ";
+            SqlDataReader myReader1 = db.showdata(query3);
 
+            while (myReader1.Read())
+            {
+                emp = Convert.ToInt32((myReader1["Emp_ID"].ToString()));
+
+            }
+
+            emp = emp + 1;
+            metroTextBox1.Text = Convert.ToString(emp);
         }
 
         private void metroButton1_Click(object sender, EventArgs e)
@@ -42,8 +53,8 @@ namespace Asia
         private void metroButton1_Click_1(object sender, EventArgs e)
         {
 
-            try
-            {
+            //try
+            //{
                 int empid, tel;
                 string fname, email, lname, gender, address, emptype, username, password;
                 DateTime dob;
@@ -66,7 +77,7 @@ namespace Asia
 
                 if (line == 1)
                 {
-                    email = metroTextBox7.Text;
+                    
                     string messgae = "Dear Employee, Welcome to Asia Hospital. ";
                     SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
                     client.EnableSsl = true;
@@ -102,11 +113,11 @@ namespace Asia
                     MetroMessageBox.Show(this, "Employee login details not added", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
-            }
-            catch (Exception)
-            {
-                MetroMessageBox.Show(this, "Exception");
-            }
+            //}
+            //catch (Exception)
+            //{
+            //    MetroMessageBox.Show(this, "Exception");
+            //}
         }
 
         private void metroButton2_Click_1(object sender, EventArgs e)
