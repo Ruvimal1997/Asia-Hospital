@@ -56,6 +56,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database.cs" />
+    <Compile Include="Employee Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Search.Designer.cs">
+      <DependentUpon>Employee Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +106,12 @@
     <Compile Include="Urine Test Form.Designer.cs">
       <DependentUpon>Urine Test Form.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Employee Search.resx">
+      <DependentUpon>Employee Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
