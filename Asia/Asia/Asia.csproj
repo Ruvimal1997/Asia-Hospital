@@ -97,17 +97,17 @@
     <Compile Include="Patient Injectio Entry.Designer.cs">
       <DependentUpon>Patient Injectio Entry.cs</DependentUpon>
     </Compile>
+    <Compile Include="Patient Prescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Prescription.Designer.cs">
+      <DependentUpon>Patient Prescription.cs</DependentUpon>
+    </Compile>
     <Compile Include="Patient Search.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Patient Search.Designer.cs">
       <DependentUpon>Patient Search.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Patient_Diagnosis_Entry_Form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Patient_Diagnosis_Entry_Form.Designer.cs">
-      <DependentUpon>Patient_Diagnosis_Entry_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Patient_Receipt_Entry.cs">
       <SubType>Form</SubType>
@@ -129,6 +129,12 @@
     <Compile Include="Urine_Test_Form.Designer.cs">
       <DependentUpon>Urine_Test_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="X-Ray.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X-Ray.Designer.cs">
+      <DependentUpon>X-Ray.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Employee Search.resx">
       <DependentUpon>Employee Search.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,11 +153,11 @@
     <EmbeddedResource Include="Patient Injectio Entry.resx">
       <DependentUpon>Patient Injectio Entry.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Patient Prescription.resx">
+      <DependentUpon>Patient Prescription.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Patient Search.resx">
       <DependentUpon>Patient Search.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Patient_Diagnosis_Entry_Form.resx">
-      <DependentUpon>Patient_Diagnosis_Entry_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Patient_Receipt_Entry.resx">
       <DependentUpon>Patient_Receipt_Entry.cs</DependentUpon>
@@ -170,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Urine_Test_Form.resx">
       <DependentUpon>Urine_Test_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X-Ray.resx">
+      <DependentUpon>X-Ray.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="AsiaHospitalManagementSystemDataSet.xsc">
       <DependentUpon>AsiaHospitalManagementSystemDataSet.xsd</DependentUpon>

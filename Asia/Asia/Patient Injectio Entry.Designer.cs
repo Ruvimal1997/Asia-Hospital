@@ -335,7 +335,7 @@
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
             this.Name = "Patient_Injectio_Entry";
-            this.Text = "Patient_Injectio_Entry";
+            this.Text = "Patient Injection Entry";
             this.Load += new System.EventHandler(this.Patient_Injectio_Entry_Load);
             ((System.ComponentModel.ISupportInitialize)(this.patientDetailTableBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.patientInjectionDatesTableBindingSource)).EndInit();
