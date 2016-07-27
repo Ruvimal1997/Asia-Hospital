@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -27,6 +28,29 @@ namespace Asia
         Database db = new Database();
         DateTime tdate;
         string name, Gender, Color, Consistency, Mucus, Blood, WBCs_HPF, RBCs_HPF, Mecrophages, Trophozoite, P_Ova, P_Cyst, C_Ova, C_Cyst, Occult_Blood, RH, Red_Sub;
+
+        private void metroComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+              try
+            {
+
+                string query2 = "Select * from Patient_Detail_Table where Registration_No='" + metroComboBox2.Text + "'";
+                SqlDataReader myReader2 = db.showdata(query2);
+
+                while (myReader2.Read())
+                {
+                    metroTextBox2.Text = (myReader2["Name"].ToString());
+                    metroTextBox3.Text = (myReader2["Age"].ToString());
+                    metroTextBox19.Text = (myReader2["Gender"].ToString());
+
+                }
+            }
+            catch (Exception)
+            {
+
+                MetroMessageBox.Show(this, "error");
+            }
+        }
 
         private void metroButton5_Click(object sender, EventArgs e)
         {

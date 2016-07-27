@@ -91,6 +91,12 @@
     <Compile Include="PaientEntry.Designer.cs">
       <DependentUpon>PaientEntry.cs</DependentUpon>
     </Compile>
+    <Compile Include="Patient Injectio Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Injectio Entry.Designer.cs">
+      <DependentUpon>Patient Injectio Entry.cs</DependentUpon>
+    </Compile>
     <Compile Include="Patient Search.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PaientEntry.resx">
       <DependentUpon>PaientEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Injectio Entry.resx">
+      <DependentUpon>Patient Injectio Entry.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Patient Search.resx">
       <DependentUpon>Patient Search.cs</DependentUpon>
