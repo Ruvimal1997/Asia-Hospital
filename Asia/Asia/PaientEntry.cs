@@ -108,15 +108,6 @@ namespace Asia
                 MetroMessageBox.Show(this, "Exception");
             }
 
-
-
-
-
-
-
-
-
-
-        }
+         }
     }
 }

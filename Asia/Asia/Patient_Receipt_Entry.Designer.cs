@@ -1,0 +1,47 @@
+﻿namespace Asia
+{
+    partial class Patient_Receipt_Entry
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // Patient_Receipt_Entry
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(447, 310);
+            this.Name = "Patient_Receipt_Entry";
+            this.Text = "Patient Receipt Entry";
+            this.Load += new System.EventHandler(this.Patient_Receipt_Entry_Load);
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+    }
+}

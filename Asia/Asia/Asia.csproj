@@ -55,6 +55,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsiaHospitalManagementSystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AsiaHospitalManagementSystemDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Database.cs" />
     <Compile Include="Employee Search.cs">
       <SubType>Form</SubType>
@@ -86,25 +91,31 @@
     <Compile Include="PaientEntry.Designer.cs">
       <DependentUpon>PaientEntry.cs</DependentUpon>
     </Compile>
-    <Compile Include="Patient Diagnosis Entry Form.cs">
+    <Compile Include="Patient_Diagnosis_Entry_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Patient Diagnosis Entry Form.Designer.cs">
-      <DependentUpon>Patient Diagnosis Entry Form.cs</DependentUpon>
+    <Compile Include="Patient_Diagnosis_Entry_Form.Designer.cs">
+      <DependentUpon>Patient_Diagnosis_Entry_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Patient Receipt Entry.cs">
+    <Compile Include="Patient_Receipt_Entry.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Patient Receipt Entry.Designer.cs">
-      <DependentUpon>Patient Receipt Entry.cs</DependentUpon>
+    <Compile Include="Patient_Receipt_Entry.Designer.cs">
+      <DependentUpon>Patient_Receipt_Entry.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Urine Test Form.cs">
+    <Compile Include="Stool Test.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Urine Test Form.Designer.cs">
-      <DependentUpon>Urine Test Form.cs</DependentUpon>
+    <Compile Include="Stool Test.Designer.cs">
+      <DependentUpon>Stool Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Urine_Test_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Urine_Test_Form.Designer.cs">
+      <DependentUpon>Urine_Test_Form.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Employee Search.resx">
       <DependentUpon>Employee Search.cs</DependentUpon>
@@ -121,11 +132,11 @@
     <EmbeddedResource Include="PaientEntry.resx">
       <DependentUpon>PaientEntry.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Patient Diagnosis Entry Form.resx">
-      <DependentUpon>Patient Diagnosis Entry Form.cs</DependentUpon>
+    <EmbeddedResource Include="Patient_Diagnosis_Entry_Form.resx">
+      <DependentUpon>Patient_Diagnosis_Entry_Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Patient Receipt Entry.resx">
-      <DependentUpon>Patient Receipt Entry.cs</DependentUpon>
+    <EmbeddedResource Include="Patient_Receipt_Entry.resx">
+      <DependentUpon>Patient_Receipt_Entry.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -136,9 +147,23 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Urine Test Form.resx">
-      <DependentUpon>Urine Test Form.cs</DependentUpon>
+    <EmbeddedResource Include="Stool Test.resx">
+      <DependentUpon>Stool Test.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Urine_Test_Form.resx">
+      <DependentUpon>Urine_Test_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="AsiaHospitalManagementSystemDataSet.xsc">
+      <DependentUpon>AsiaHospitalManagementSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AsiaHospitalManagementSystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AsiaHospitalManagementSystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AsiaHospitalManagementSystemDataSet.xss">
+      <DependentUpon>AsiaHospitalManagementSystemDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
