@@ -6,6 +6,8 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -64,6 +66,20 @@ namespace Asia
 
                 if (line == 1)
                 {
+                    email = metroTextBox7.Text;
+                    string messgae = "Dear Employee, Welcome to Asia Hospital. ";
+                    SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+                    client.EnableSsl = true;
+                    client.Timeout = 10000;
+                    client.DeliveryMethod = SmtpDeliveryMethod.Network;
+                    client.UseDefaultCredentials = false;
+                    client.Credentials = new NetworkCredential("asiahospital123@gmail.com", "asia12345");
+                    MailMessage msg = new MailMessage();
+                    msg.To.Add(email);
+                    msg.From = new MailAddress("asiahospital123@gmail.com");
+                    msg.Subject = "Re:Asia Hospital";
+                    msg.Body = messgae;
+                    client.Send(msg);
                     MetroMessageBox.Show(this,"Employee added Succesfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
