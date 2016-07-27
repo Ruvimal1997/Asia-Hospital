@@ -103,9 +103,9 @@
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.asiaHospitalManagementSystemDataSet = new Asia.AsiaHospitalManagementSystemDataSet();
+            this.dataSet1 = new Asia.DataSet1();
             this.patientDetailTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.patient_Detail_TableTableAdapter = new Asia.AsiaHospitalManagementSystemDataSetTableAdapters.Patient_Detail_TableTableAdapter();
+            this.patient_Detail_TableTableAdapter = new Asia.DataSet1TableAdapters.Patient_Detail_TableTableAdapter();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.metroTabControl3.SuspendLayout();
@@ -113,7 +113,7 @@
             this.metroTabControl2.SuspendLayout();
             this.metroTabPage3.SuspendLayout();
             this.metroTabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.asiaHospitalManagementSystemDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.patientDetailTableBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -123,7 +123,7 @@
             // 
             // 
             this.metroTextBox31.CustomButton.Image = null;
-            this.metroTextBox31.CustomButton.Location = new System.Drawing.Point(180, 1);
+            this.metroTextBox31.CustomButton.Location = new System.Drawing.Point(165, 1);
             this.metroTextBox31.CustomButton.Name = "";
             this.metroTextBox31.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.metroTextBox31.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -181,6 +181,7 @@
             // 
             // metroComboBox3
             // 
+            this.metroComboBox3.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.patientDetailTableBindingSource, "Registration_No", true));
             this.metroComboBox3.DataSource = this.patientDetailTableBindingSource;
             this.metroComboBox3.DisplayMember = "Registration_No";
             this.metroComboBox3.FormattingEnabled = true;
@@ -1526,15 +1527,15 @@
             this.metroLabel1.TabIndex = 28;
             this.metroLabel1.Text = "Registration Number";
             // 
-            // asiaHospitalManagementSystemDataSet
+            // dataSet1
             // 
-            this.asiaHospitalManagementSystemDataSet.DataSetName = "AsiaHospitalManagementSystemDataSet";
-            this.asiaHospitalManagementSystemDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.dataSet1.DataSetName = "DataSet1";
+            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // patientDetailTableBindingSource
             // 
             this.patientDetailTableBindingSource.DataMember = "Patient_Detail_Table";
-            this.patientDetailTableBindingSource.DataSource = this.asiaHospitalManagementSystemDataSet;
+            this.patientDetailTableBindingSource.DataSource = this.dataSet1;
             // 
             // patient_Detail_TableTableAdapter
             // 
@@ -1572,7 +1573,7 @@
             this.metroTabPage3.PerformLayout();
             this.metroTabPage2.ResumeLayout(false);
             this.metroTabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.asiaHospitalManagementSystemDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.patientDetailTableBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1655,8 +1656,8 @@
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroLabel metroLabel1;
-        private AsiaHospitalManagementSystemDataSet asiaHospitalManagementSystemDataSet;
+        private DataSet1 dataSet1;
         private System.Windows.Forms.BindingSource patientDetailTableBindingSource;
-        private AsiaHospitalManagementSystemDataSetTableAdapters.Patient_Detail_TableTableAdapter patient_Detail_TableTableAdapter;
+        private DataSet1TableAdapters.Patient_Detail_TableTableAdapter patient_Detail_TableTableAdapter;
     }
 }

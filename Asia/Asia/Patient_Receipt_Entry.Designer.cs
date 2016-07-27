@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.metroTextBox11 = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel14 = new MetroFramework.Controls.MetroLabel();
             this.metroTextBox10 = new MetroFramework.Controls.MetroTextBox();
@@ -63,8 +64,15 @@
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.dataSet1 = new Asia.DataSet1();
+            this.dataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.patientDetailTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.patient_Detail_TableTableAdapter = new Asia.DataSet1TableAdapters.Patient_Detail_TableTableAdapter();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.patientDetailTableBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // metroTextBox11
@@ -257,6 +265,9 @@
             // 
             // metroComboBox3
             // 
+            this.metroComboBox3.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.patientDetailTableBindingSource, "Registration_No", true));
+            this.metroComboBox3.DataSource = this.patientDetailTableBindingSource;
+            this.metroComboBox3.DisplayMember = "Registration_No";
             this.metroComboBox3.FormattingEnabled = true;
             this.metroComboBox3.ItemHeight = 23;
             this.metroComboBox3.Location = new System.Drawing.Point(169, 76);
@@ -264,6 +275,7 @@
             this.metroComboBox3.Size = new System.Drawing.Size(175, 29);
             this.metroComboBox3.TabIndex = 36;
             this.metroComboBox3.UseSelectable = true;
+            this.metroComboBox3.ValueMember = "Registration_No";
             // 
             // metroButton3
             // 
@@ -685,6 +697,25 @@
             this.metroLabel1.TabIndex = 22;
             this.metroLabel1.Text = "Registration No";
             // 
+            // dataSet1
+            // 
+            this.dataSet1.DataSetName = "DataSet1";
+            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dataSet1BindingSource
+            // 
+            this.dataSet1BindingSource.DataSource = this.dataSet1;
+            this.dataSet1BindingSource.Position = 0;
+            // 
+            // patientDetailTableBindingSource
+            // 
+            this.patientDetailTableBindingSource.DataMember = "Patient_Detail_Table";
+            this.patientDetailTableBindingSource.DataSource = this.dataSet1BindingSource;
+            // 
+            // patient_Detail_TableTableAdapter
+            // 
+            this.patient_Detail_TableTableAdapter.ClearBeforeFill = true;
+            // 
             // Patient_Receipt_Entry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -714,6 +745,9 @@
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
             this.metroTabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.patientDetailTableBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -756,5 +790,9 @@
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroLabel metroLabel1;
+        private System.Windows.Forms.BindingSource dataSet1BindingSource;
+        private DataSet1 dataSet1;
+        private System.Windows.Forms.BindingSource patientDetailTableBindingSource;
+        private DataSet1TableAdapters.Patient_Detail_TableTableAdapter patient_Detail_TableTableAdapter;
     }
 }

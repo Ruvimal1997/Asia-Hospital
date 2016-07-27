@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.metroButton5 = new MetroFramework.Controls.MetroButton();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.metroLabel11 = new MetroFramework.Controls.MetroLabel();
@@ -67,8 +68,15 @@
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
+            this.dataSet1 = new Asia.DataSet1();
+            this.dataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.patientDetailTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.patient_Detail_TableTableAdapter = new Asia.DataSet1TableAdapters.Patient_Detail_TableTableAdapter();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.patientDetailTableBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // metroButton5
@@ -137,6 +145,8 @@
             // 
             // metroComboBox2
             // 
+            this.metroComboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.patientDetailTableBindingSource, "Registration_No", true));
+            this.metroComboBox2.DataSource = this.patientDetailTableBindingSource;
             this.metroComboBox2.DisplayMember = "Registration_No";
             this.metroComboBox2.FormattingEnabled = true;
             this.metroComboBox2.ItemHeight = 23;
@@ -799,6 +809,25 @@
             this.metroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.metroTextBox1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
+            // dataSet1
+            // 
+            this.dataSet1.DataSetName = "DataSet1";
+            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dataSet1BindingSource
+            // 
+            this.dataSet1BindingSource.DataSource = this.dataSet1;
+            this.dataSet1BindingSource.Position = 0;
+            // 
+            // patientDetailTableBindingSource
+            // 
+            this.patientDetailTableBindingSource.DataMember = "Patient_Detail_Table";
+            this.patientDetailTableBindingSource.DataSource = this.dataSet1BindingSource;
+            // 
+            // patient_Detail_TableTableAdapter
+            // 
+            this.patient_Detail_TableTableAdapter.ClearBeforeFill = true;
+            // 
             // Colonoscopy_Test
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -824,6 +853,9 @@
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
             this.metroTabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.patientDetailTableBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -870,5 +902,9 @@
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroTextBox metroTextBox1;
+        private System.Windows.Forms.BindingSource dataSet1BindingSource;
+        private DataSet1 dataSet1;
+        private System.Windows.Forms.BindingSource patientDetailTableBindingSource;
+        private DataSet1TableAdapters.Patient_Detail_TableTableAdapter patient_Detail_TableTableAdapter;
     }
 }

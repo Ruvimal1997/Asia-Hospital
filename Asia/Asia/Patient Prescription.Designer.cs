@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.metroTextBox9 = new MetroFramework.Controls.MetroTextBox();
             this.metroComboBox2 = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel14 = new MetroFramework.Controls.MetroLabel();
@@ -75,11 +76,16 @@
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
+            this.dataSet1 = new Asia.DataSet1();
+            this.patientDetailTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.patient_Detail_TableTableAdapter = new Asia.DataSet1TableAdapters.Patient_Detail_TableTableAdapter();
             this.Test.SuspendLayout();
             this.metroTabPage2.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.metroTabPage3.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.patientDetailTableBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // metroTextBox9
@@ -477,6 +483,8 @@
             // 
             // metroComboBox3
             // 
+            this.metroComboBox3.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.patientDetailTableBindingSource, "Registration_No", true));
+            this.metroComboBox3.DataSource = this.patientDetailTableBindingSource;
             this.metroComboBox3.DisplayMember = "Registration_No";
             this.metroComboBox3.FormattingEnabled = true;
             this.metroComboBox3.ItemHeight = 23;
@@ -807,6 +815,20 @@
             this.metroTabControl1.TabIndex = 36;
             this.metroTabControl1.UseSelectable = true;
             // 
+            // dataSet1
+            // 
+            this.dataSet1.DataSetName = "DataSet1";
+            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // patientDetailTableBindingSource
+            // 
+            this.patientDetailTableBindingSource.DataMember = "Patient_Detail_Table";
+            this.patientDetailTableBindingSource.DataSource = this.dataSet1;
+            // 
+            // patient_Detail_TableTableAdapter
+            // 
+            this.patient_Detail_TableTableAdapter.ClearBeforeFill = true;
+            // 
             // Patient_Prescription
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -836,6 +858,8 @@
             this.metroTabPage3.ResumeLayout(false);
             this.metroTabPage3.PerformLayout();
             this.metroTabControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.patientDetailTableBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -890,5 +914,8 @@
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroTabControl metroTabControl1;
+        private DataSet1 dataSet1;
+        private System.Windows.Forms.BindingSource patientDetailTableBindingSource;
+        private DataSet1TableAdapters.Patient_Detail_TableTableAdapter patient_Detail_TableTableAdapter;
     }
 }

@@ -35,10 +35,8 @@
             this.metroButton5 = new MetroFramework.Controls.MetroButton();
             this.metroButton3 = new MetroFramework.Controls.MetroButton();
             this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
-            this.patientDetailTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
             this.metroComboBox2 = new MetroFramework.Controls.MetroComboBox();
-            this.patientInjectionDatesTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.metroDateTime2 = new MetroFramework.Controls.MetroDateTime();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
@@ -48,8 +46,11 @@
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.dataSet1 = new Asia.DataSet1();
+            this.patientDetailTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.patient_Detail_TableTableAdapter = new Asia.DataSet1TableAdapters.Patient_Detail_TableTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.patientDetailTableBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.patientInjectionDatesTableBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // metroButton6
@@ -152,10 +153,6 @@
             this.metroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.metroTextBox1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // patientDetailTableBindingSource
-            // 
-            this.patientDetailTableBindingSource.DataMember = "Patient_Detail_Table";
-            // 
             // metroComboBox1
             // 
             this.metroComboBox1.FormattingEnabled = true;
@@ -172,6 +169,7 @@
             // 
             // metroComboBox2
             // 
+            this.metroComboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.patientDetailTableBindingSource, "Registration_No", true));
             this.metroComboBox2.DataSource = this.patientDetailTableBindingSource;
             this.metroComboBox2.DisplayMember = "Registration_No";
             this.metroComboBox2.FormattingEnabled = true;
@@ -183,10 +181,6 @@
             this.metroComboBox2.UseSelectable = true;
             this.metroComboBox2.ValueMember = "Registration_No";
             this.metroComboBox2.SelectedIndexChanged += new System.EventHandler(this.metroComboBox2_SelectedIndexChanged);
-            // 
-            // patientInjectionDatesTableBindingSource
-            // 
-            this.patientInjectionDatesTableBindingSource.DataMember = "Patient_Injection_Dates_Table";
             // 
             // metroDateTime2
             // 
@@ -312,6 +306,20 @@
             this.metroLabel1.TabIndex = 24;
             this.metroLabel1.Text = "Registration No";
             // 
+            // dataSet1
+            // 
+            this.dataSet1.DataSetName = "DataSet1";
+            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // patientDetailTableBindingSource
+            // 
+            this.patientDetailTableBindingSource.DataMember = "Patient_Detail_Table";
+            this.patientDetailTableBindingSource.DataSource = this.dataSet1;
+            // 
+            // patient_Detail_TableTableAdapter
+            // 
+            this.patient_Detail_TableTableAdapter.ClearBeforeFill = true;
+            // 
             // Patient_Injectio_Entry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -337,8 +345,8 @@
             this.Name = "Patient_Injectio_Entry";
             this.Text = "Patient Injection Entry";
             this.Load += new System.EventHandler(this.Patient_Injectio_Entry_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.patientDetailTableBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.patientInjectionDatesTableBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -352,10 +360,8 @@
         private MetroFramework.Controls.MetroButton metroButton5;
         private MetroFramework.Controls.MetroButton metroButton3;
         private MetroFramework.Controls.MetroTextBox metroTextBox1;
-        private System.Windows.Forms.BindingSource patientDetailTableBindingSource;
         private MetroFramework.Controls.MetroComboBox metroComboBox1;
         private MetroFramework.Controls.MetroComboBox metroComboBox2;
-        private System.Windows.Forms.BindingSource patientInjectionDatesTableBindingSource;
         private MetroFramework.Controls.MetroDateTime metroDateTime2;
         private MetroFramework.Controls.MetroLabel metroLabel6;
         private MetroFramework.Controls.MetroLabel metroLabel5;
@@ -365,5 +371,8 @@
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroLabel metroLabel1;
+        private DataSet1 dataSet1;
+        private System.Windows.Forms.BindingSource patientDetailTableBindingSource;
+        private DataSet1TableAdapters.Patient_Detail_TableTableAdapter patient_Detail_TableTableAdapter;
     }
 }

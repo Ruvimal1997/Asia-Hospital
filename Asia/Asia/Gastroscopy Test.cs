@@ -22,6 +22,8 @@ namespace Asia
 
         private void Gastroscopy_Test_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'dataSet1.Patient_Detail_Table' table. You can move, or remove it, as needed.
+            this.patient_Detail_TableTableAdapter.Fill(this.dataSet1.Patient_Detail_Table);
             metroTextBox17.Text = DateTime.Now.ToString();
         }
         int Reg_No, Age;
