@@ -88,7 +88,7 @@
             this.metroTabControl1.Name = "metroTabControl1";
             this.metroTabControl1.SelectedIndex = 0;
             this.metroTabControl1.Size = new System.Drawing.Size(329, 211);
-            this.metroTabControl1.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroTabControl1.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTabControl1.TabIndex = 38;
             this.metroTabControl1.UseSelectable = true;
             // 
