@@ -30,20 +30,21 @@
         {
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
-            this.metroTile1 = new MetroFramework.Controls.MetroTile();
-            this.metroTile2 = new MetroFramework.Controls.MetroTile();
-            this.metroTile3 = new MetroFramework.Controls.MetroTile();
-            this.metroTile4 = new MetroFramework.Controls.MetroTile();
-            this.metroTile5 = new MetroFramework.Controls.MetroTile();
-            this.metroTile7 = new MetroFramework.Controls.MetroTile();
-            this.metroTile8 = new MetroFramework.Controls.MetroTile();
-            this.metroTile9 = new MetroFramework.Controls.MetroTile();
-            this.metroTile10 = new MetroFramework.Controls.MetroTile();
             this.metroTile11 = new MetroFramework.Controls.MetroTile();
+            this.metroTile10 = new MetroFramework.Controls.MetroTile();
+            this.metroTile9 = new MetroFramework.Controls.MetroTile();
+            this.metroTile8 = new MetroFramework.Controls.MetroTile();
+            this.metroTile7 = new MetroFramework.Controls.MetroTile();
+            this.metroTile5 = new MetroFramework.Controls.MetroTile();
+            this.metroTile4 = new MetroFramework.Controls.MetroTile();
+            this.metroTile3 = new MetroFramework.Controls.MetroTile();
+            this.metroTile2 = new MetroFramework.Controls.MetroTile();
+            this.metroTile1 = new MetroFramework.Controls.MetroTile();
             this.metroTabControl2 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
-            this.metroTile6 = new MetroFramework.Controls.MetroTile();
             this.metroTile12 = new MetroFramework.Controls.MetroTile();
+            this.metroTile6 = new MetroFramework.Controls.MetroTile();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.metroTabControl2.SuspendLayout();
@@ -84,93 +85,16 @@
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.VerticalScrollbarSize = 10;
             // 
-            // metroTile1
+            // metroTile11
             // 
-            this.metroTile1.ActiveControl = null;
-            this.metroTile1.Location = new System.Drawing.Point(3, 17);
-            this.metroTile1.Name = "metroTile1";
-            this.metroTile1.Size = new System.Drawing.Size(132, 107);
-            this.metroTile1.TabIndex = 2;
-            this.metroTile1.Text = "Patient Entry";
-            this.metroTile1.UseSelectable = true;
-            this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click_1);
-            // 
-            // metroTile2
-            // 
-            this.metroTile2.ActiveControl = null;
-            this.metroTile2.Location = new System.Drawing.Point(141, 17);
-            this.metroTile2.Name = "metroTile2";
-            this.metroTile2.Size = new System.Drawing.Size(132, 107);
-            this.metroTile2.TabIndex = 3;
-            this.metroTile2.Text = "Employee";
-            this.metroTile2.UseSelectable = true;
-            this.metroTile2.Click += new System.EventHandler(this.metroTile2_Click_1);
-            // 
-            // metroTile3
-            // 
-            this.metroTile3.ActiveControl = null;
-            this.metroTile3.Location = new System.Drawing.Point(279, 17);
-            this.metroTile3.Name = "metroTile3";
-            this.metroTile3.Size = new System.Drawing.Size(132, 107);
-            this.metroTile3.TabIndex = 4;
-            this.metroTile3.Text = "Colonoscopy";
-            this.metroTile3.UseSelectable = true;
-            this.metroTile3.Click += new System.EventHandler(this.metroTile3_Click_1);
-            // 
-            // metroTile4
-            // 
-            this.metroTile4.ActiveControl = null;
-            this.metroTile4.Location = new System.Drawing.Point(3, 130);
-            this.metroTile4.Name = "metroTile4";
-            this.metroTile4.Size = new System.Drawing.Size(132, 107);
-            this.metroTile4.TabIndex = 5;
-            this.metroTile4.Text = "Gastrocopy";
-            this.metroTile4.UseSelectable = true;
-            this.metroTile4.Click += new System.EventHandler(this.metroTile4_Click_1);
-            // 
-            // metroTile5
-            // 
-            this.metroTile5.ActiveControl = null;
-            this.metroTile5.Location = new System.Drawing.Point(141, 130);
-            this.metroTile5.Name = "metroTile5";
-            this.metroTile5.Size = new System.Drawing.Size(132, 107);
-            this.metroTile5.TabIndex = 6;
-            this.metroTile5.Text = "Patient Prescription";
-            this.metroTile5.UseSelectable = true;
-            this.metroTile5.Click += new System.EventHandler(this.metroTile5_Click_1);
-            // 
-            // metroTile7
-            // 
-            this.metroTile7.ActiveControl = null;
-            this.metroTile7.Location = new System.Drawing.Point(279, 130);
-            this.metroTile7.Name = "metroTile7";
-            this.metroTile7.Size = new System.Drawing.Size(132, 107);
-            this.metroTile7.TabIndex = 7;
-            this.metroTile7.Text = "Patient Injection";
-            this.metroTile7.UseSelectable = true;
-            this.metroTile7.Click += new System.EventHandler(this.metroTile7_Click);
-            // 
-            // metroTile8
-            // 
-            this.metroTile8.ActiveControl = null;
-            this.metroTile8.Location = new System.Drawing.Point(3, 243);
-            this.metroTile8.Name = "metroTile8";
-            this.metroTile8.Size = new System.Drawing.Size(132, 107);
-            this.metroTile8.TabIndex = 8;
-            this.metroTile8.Text = "Patient Reciept";
-            this.metroTile8.UseSelectable = true;
-            this.metroTile8.Click += new System.EventHandler(this.metroTile8_Click);
-            // 
-            // metroTile9
-            // 
-            this.metroTile9.ActiveControl = null;
-            this.metroTile9.Location = new System.Drawing.Point(141, 243);
-            this.metroTile9.Name = "metroTile9";
-            this.metroTile9.Size = new System.Drawing.Size(132, 107);
-            this.metroTile9.TabIndex = 9;
-            this.metroTile9.Text = "Stool Test";
-            this.metroTile9.UseSelectable = true;
-            this.metroTile9.Click += new System.EventHandler(this.metroTile9_Click);
+            this.metroTile11.ActiveControl = null;
+            this.metroTile11.Location = new System.Drawing.Point(417, 17);
+            this.metroTile11.Name = "metroTile11";
+            this.metroTile11.Size = new System.Drawing.Size(132, 107);
+            this.metroTile11.TabIndex = 11;
+            this.metroTile11.Text = "X-Rays";
+            this.metroTile11.UseSelectable = true;
+            this.metroTile11.Click += new System.EventHandler(this.metroTile11_Click);
             // 
             // metroTile10
             // 
@@ -183,16 +107,93 @@
             this.metroTile10.UseSelectable = true;
             this.metroTile10.Click += new System.EventHandler(this.metroTile10_Click);
             // 
-            // metroTile11
+            // metroTile9
             // 
-            this.metroTile11.ActiveControl = null;
-            this.metroTile11.Location = new System.Drawing.Point(417, 17);
-            this.metroTile11.Name = "metroTile11";
-            this.metroTile11.Size = new System.Drawing.Size(132, 107);
-            this.metroTile11.TabIndex = 11;
-            this.metroTile11.Text = "X-Rays";
-            this.metroTile11.UseSelectable = true;
-            this.metroTile11.Click += new System.EventHandler(this.metroTile11_Click);
+            this.metroTile9.ActiveControl = null;
+            this.metroTile9.Location = new System.Drawing.Point(141, 243);
+            this.metroTile9.Name = "metroTile9";
+            this.metroTile9.Size = new System.Drawing.Size(132, 107);
+            this.metroTile9.TabIndex = 9;
+            this.metroTile9.Text = "Stool Test";
+            this.metroTile9.UseSelectable = true;
+            this.metroTile9.Click += new System.EventHandler(this.metroTile9_Click);
+            // 
+            // metroTile8
+            // 
+            this.metroTile8.ActiveControl = null;
+            this.metroTile8.Location = new System.Drawing.Point(3, 243);
+            this.metroTile8.Name = "metroTile8";
+            this.metroTile8.Size = new System.Drawing.Size(132, 107);
+            this.metroTile8.TabIndex = 8;
+            this.metroTile8.Text = "Patient Reciept";
+            this.metroTile8.UseSelectable = true;
+            this.metroTile8.Click += new System.EventHandler(this.metroTile8_Click);
+            // 
+            // metroTile7
+            // 
+            this.metroTile7.ActiveControl = null;
+            this.metroTile7.Location = new System.Drawing.Point(279, 130);
+            this.metroTile7.Name = "metroTile7";
+            this.metroTile7.Size = new System.Drawing.Size(132, 107);
+            this.metroTile7.TabIndex = 7;
+            this.metroTile7.Text = "Patient Injection";
+            this.metroTile7.UseSelectable = true;
+            this.metroTile7.Click += new System.EventHandler(this.metroTile7_Click);
+            // 
+            // metroTile5
+            // 
+            this.metroTile5.ActiveControl = null;
+            this.metroTile5.Location = new System.Drawing.Point(141, 130);
+            this.metroTile5.Name = "metroTile5";
+            this.metroTile5.Size = new System.Drawing.Size(132, 107);
+            this.metroTile5.TabIndex = 6;
+            this.metroTile5.Text = "Patient Prescription";
+            this.metroTile5.UseSelectable = true;
+            this.metroTile5.Click += new System.EventHandler(this.metroTile5_Click_1);
+            // 
+            // metroTile4
+            // 
+            this.metroTile4.ActiveControl = null;
+            this.metroTile4.Location = new System.Drawing.Point(3, 130);
+            this.metroTile4.Name = "metroTile4";
+            this.metroTile4.Size = new System.Drawing.Size(132, 107);
+            this.metroTile4.TabIndex = 5;
+            this.metroTile4.Text = "Gastrocopy";
+            this.metroTile4.UseSelectable = true;
+            this.metroTile4.Click += new System.EventHandler(this.metroTile4_Click_1);
+            // 
+            // metroTile3
+            // 
+            this.metroTile3.ActiveControl = null;
+            this.metroTile3.Location = new System.Drawing.Point(279, 17);
+            this.metroTile3.Name = "metroTile3";
+            this.metroTile3.Size = new System.Drawing.Size(132, 107);
+            this.metroTile3.TabIndex = 4;
+            this.metroTile3.Text = "Colonoscopy";
+            this.metroTile3.UseSelectable = true;
+            this.metroTile3.Click += new System.EventHandler(this.metroTile3_Click_1);
+            // 
+            // metroTile2
+            // 
+            this.metroTile2.ActiveControl = null;
+            this.metroTile2.Location = new System.Drawing.Point(141, 17);
+            this.metroTile2.Name = "metroTile2";
+            this.metroTile2.Size = new System.Drawing.Size(132, 107);
+            this.metroTile2.TabIndex = 3;
+            this.metroTile2.Text = "Employee";
+            this.metroTile2.UseSelectable = true;
+            this.metroTile2.Click += new System.EventHandler(this.metroTile2_Click_1);
+            // 
+            // metroTile1
+            // 
+            this.metroTile1.ActiveControl = null;
+            this.metroTile1.Location = new System.Drawing.Point(3, 17);
+            this.metroTile1.Name = "metroTile1";
+            this.metroTile1.Size = new System.Drawing.Size(132, 107);
+            this.metroTile1.TabIndex = 2;
+            this.metroTile1.Text = "Patient Entry";
+            this.metroTile1.UseSelectable = true;
+            this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click_1);
             // 
             // metroTabControl2
             // 
@@ -220,17 +221,6 @@
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.VerticalScrollbarSize = 10;
             // 
-            // metroTile6
-            // 
-            this.metroTile6.ActiveControl = null;
-            this.metroTile6.Location = new System.Drawing.Point(3, 17);
-            this.metroTile6.Name = "metroTile6";
-            this.metroTile6.Size = new System.Drawing.Size(132, 107);
-            this.metroTile6.TabIndex = 12;
-            this.metroTile6.Text = "Employee Search";
-            this.metroTile6.UseSelectable = true;
-            this.metroTile6.Click += new System.EventHandler(this.metroTile6_Click);
-            // 
             // metroTile12
             // 
             this.metroTile12.ActiveControl = null;
@@ -242,11 +232,33 @@
             this.metroTile12.UseSelectable = true;
             this.metroTile12.Click += new System.EventHandler(this.metroTile12_Click);
             // 
+            // metroTile6
+            // 
+            this.metroTile6.ActiveControl = null;
+            this.metroTile6.Location = new System.Drawing.Point(3, 17);
+            this.metroTile6.Name = "metroTile6";
+            this.metroTile6.Size = new System.Drawing.Size(132, 107);
+            this.metroTile6.TabIndex = 12;
+            this.metroTile6.Text = "Employee Search";
+            this.metroTile6.UseSelectable = true;
+            this.metroTile6.Click += new System.EventHandler(this.metroTile6_Click);
+            // 
+            // metroButton1
+            // 
+            this.metroButton1.Location = new System.Drawing.Point(984, 21);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(75, 23);
+            this.metroButton1.TabIndex = 14;
+            this.metroButton1.Text = "Logout";
+            this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
+            // 
             // Main_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1099, 492);
+            this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.metroTabControl2);
             this.Controls.Add(this.metroTabControl1);
             this.Name = "Main_Menu";
@@ -277,5 +289,6 @@
         private MetroFramework.Controls.MetroTabPage metroTabPage2;
         private MetroFramework.Controls.MetroTile metroTile6;
         private MetroFramework.Controls.MetroTile metroTile12;
+        private MetroFramework.Controls.MetroButton metroButton1;
     }
 }

@@ -134,6 +134,13 @@ namespace Asia
             ps.Show();
             Close();
         }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+            Main_Menu mn = new Main_Menu();
+            mn.Show();
+            Close();
+        }
     }
  }
 
